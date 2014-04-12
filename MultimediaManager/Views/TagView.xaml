@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="MultimediaManager.Views.TagView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel Margin="5,2,2,2">
+        <Label Content="Artist"/>
+        <TextBox Height="23" Width="200" TextWrapping="Wrap" Text="{Binding Path=Artist}" HorizontalAlignment="Left"/>
+        <Label Content="Title"/>
+        <TextBox Height="23" Width="200" TextWrapping="Wrap" Text="{Binding Path=Title}" HorizontalAlignment="Left"/>
+
+
+    </StackPanel>
+</UserControl>
