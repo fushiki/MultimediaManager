@@ -1,0 +1,2171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="9f3b231d-101d-4d41-9783-c2237dc0f27d"
+  name="Views"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="75e61549-3844-4960-880f-5dcda05d1947"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMultimediaManager.Views"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="99b362e1-bd67-4a15-b7ed-8df3b9a4e711"
+        name="TagView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6a1b6069-bc07-45eb-9e6e-6b3a70de4ecb"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagView"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ae3f3776-6e21-42db-b31f-52f963834d4e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="32e4838f-8c7e-42d2-8f3e-c15bf19d68c5">
+                <propertyInstance
+                  Id="e7fc0ac1-44ac-4bf5-b60a-c3553562157b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="118c17c3-53a3-4f96-820a-6ccd783bc01a">
+                <propertyInstance
+                  Id="ad425514-4b12-4b00-aec2-9114004ec8c1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="86f08fe8-5eee-41d5-a46f-3378a6ca8f2d">
+                <propertyInstance
+                  Id="dbd9f9f0-7d05-407d-9eec-24721541cbcd"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3eff890-fcfe-44c3-b0c4-7e12ada1d131">
+                <propertyInstance
+                  Id="12abf5f4-93b4-48d0-983b-5d43ef1b4db0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5067eb0d-da52-4532-b494-d3582961c507">
+                <propertyInstance
+                  Id="1a3eac91-3a6c-41a1-bc86-e29775093adf"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="1ca4ff40-08c4-4a0f-a2cb-17ce5de4cd35">
+            <interfaceMoniker
+              Id="99f3f114-e331-4200-aae7-5bc63bc5d91a"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package7_2138.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="b2cd1dac-3951-4d32-bfdb-f6d2c01a1974"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5c26fdd-c4c9-4107-9c60-7bf04f36fd74"
+              LastKnownName="UserControl"
+              LastKnownLocation="Package5_2138.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="89f27b8e-0065-44c2-82b8-57cb64101a54"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="96b252be-7bf5-42b4-8ae9-3bd9e7ea1a45"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagView Member%3D_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="98778a83-5f6e-44dc-a6a1-a80110a44e28"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91808350-6b5a-45ac-be91-9f2b1efda472">
+                    <propertyInstance
+                      Id="8347e194-38da-4ede-865d-03604c7d9f1b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a063eecf-82fc-4ce1-91d7-9f6ee8f51a7b">
+                    <propertyInstance
+                      Id="b92be674-8431-4f0f-98d2-5e0f8df4b60b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b885cbf-7eaa-4c3b-a83d-4246d8a4bd76">
+                    <propertyInstance
+                      Id="2dc0fb8e-2003-4837-8f0b-45215fa4ccf3"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bcc00ae3-0b04-4777-8fe6-dc764b4e3841">
+                    <propertyInstance
+                      Id="1dd69baa-85f5-4542-9c01-cddf8345c52e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d1f7369-d44a-4f67-b284-a625fb3731e0">
+                    <propertyInstance
+                      Id="bf6a5785-2e25-4195-af2f-3c9ec115b1ca"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="139dc6d2-031d-48f3-aeab-fd1748f59304"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="993e88e0-6765-4c10-ab90-2965eb71494a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagView Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="839bea69-24a6-4ef5-8730-00c05ed780be"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69eebfbf-e15b-4bdf-915c-809dc4a50f87">
+                    <propertyInstance
+                      Id="0ec8cd20-9590-4d29-b7c4-d539d254e2ee"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2744726-5a64-4a11-8823-d112b08cb01e">
+                    <propertyInstance
+                      Id="07003d77-c674-48db-9a48-a64ee4c20176"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1f8381f-e229-4549-aa60-2d50e66ba015">
+                    <propertyInstance
+                      Id="82fbf866-7c68-4f38-ba42-7f6321dc4238"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46df4f0b-1360-4172-a1a2-687cb1a56112">
+                    <propertyInstance
+                      Id="620c20df-e62f-42e8-88fd-c8ea01767829"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17fbfea8-5999-4f82-8478-5980bb9d360c">
+                    <propertyInstance
+                      Id="59a2f196-0028-4aa6-b3c4-590022a45169"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc2db896-017d-41f0-b453-15f4e27e61c7">
+                    <propertyInstance
+                      Id="0454898a-d689-48ff-b967-defa80d9f4dd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="aca2ef84-8160-4784-93ee-7c3bdea50884"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f47c2063-2ef0-41b9-b2f3-e7e1a8df611a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagView Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="76ffde18-6888-4738-8279-a8cd04b94fe5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5807252f-4df0-421f-afa6-1fa416344566">
+                    <propertyInstance
+                      Id="3ba02af7-8170-45b0-a475-0b42c3bf8db4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0b9c81a-aa51-435e-b008-e50d46f6d480">
+                    <propertyInstance
+                      Id="96dd69f5-7fc6-448e-94b4-3ebb92215b03"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc69711e-b7e5-4a51-86d1-b1b572784cdb">
+                    <propertyInstance
+                      Id="2b82f52c-4851-4cdd-ace2-84450ebbbc11"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0172b06f-9a02-4f49-9e60-ba1c12626ac0">
+                    <propertyInstance
+                      Id="b7ee68cc-b58d-4c68-b33f-d6a618f1c97f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="016efb77-abda-4d96-856d-d1979870f469">
+                    <propertyInstance
+                      Id="94984933-e946-4d54-b821-e0f34cf21023"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1863c904-15f9-46ac-9f7f-5abde8eac95f">
+                    <propertyInstance
+                      Id="784ce2c5-c240-48fc-b414-556f7ea8167b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3f9f80a4-3ef0-424f-b374-c107d6553e23"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4a460f8c-a897-4e22-b00d-5b2a3c3a4721"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagView Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b7b8f9a9-6c3b-4428-afb0-6dbb15257ac7"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a3d7bc9c-8b4e-4a28-81ef-2aa49600c543"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagView Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7a3c25f6-659b-4033-a2b5-426734375a7f"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="68763b53-d797-4b6d-84ce-b39f5d8cbecb"
+            name="TagView"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c4fbb9ea-91b0-4c7f-9ba2-02eae297efbb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagView Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2bc15d66-8455-453d-896a-d95bbaaf1cbf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f376ebc2-4de0-432b-8dbc-07b4376209e5">
+                    <propertyInstance
+                      Id="ce74f78c-daf4-494d-a24a-6a88c3b646c9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42b37089-cc22-4708-9fda-2b266746510a">
+                    <propertyInstance
+                      Id="4a942478-00e6-4bcc-ad39-6d95c165bde0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58cb0f0a-6cd5-4757-844a-223244a2c681">
+                    <propertyInstance
+                      Id="3ea725dd-d068-434c-905f-092cdaa91c4f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="786e3116-5cd6-4296-894f-6411fffb5eb1">
+                    <propertyInstance
+                      Id="115d6795-25fc-42b3-9b53-2b0f21a2c835"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84c9d7ad-ab88-4716-b640-fb1ac3d3b4b5">
+                    <propertyInstance
+                      Id="29d854f1-ddd7-4952-a094-09649f6a673c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8d4f4b3-a5fc-484b-98d7-bc20be319bb6">
+                    <propertyInstance
+                      Id="55513a81-59b9-4b9f-89bd-e041c0047073"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="500eb312-47b1-4f85-b20a-ba8b28f3b84c"
+        name="TestDragAndDropView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ee22230c-03f3-4563-91a5-e3206812bdd3"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTestDragAndDropView"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f4fd7b0c-635c-4f36-9f6c-131a49b0c208"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d4b13fed-8928-44eb-a981-c8cd5a76354d">
+                <propertyInstance
+                  Id="219f806a-49ec-452b-8bc3-c123b01abb42"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="484237f6-eb1b-4544-991b-58036350983a">
+                <propertyInstance
+                  Id="18c4b80c-ef52-4a4a-97f6-692c7fb6a119"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b53545e5-e6bf-4d83-ac08-57db9667b13c">
+                <propertyInstance
+                  Id="596f5beb-5e47-49f5-9af1-758e9e5fea8b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a9e34393-52ee-4319-9624-857332a7836a">
+                <propertyInstance
+                  Id="d66f75e4-31fc-4bd0-adf7-73c21a17c113"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="225c1af6-5c0b-41ba-b561-94de8cf59ca5">
+                <propertyInstance
+                  Id="f84cefc7-74ca-4d84-b225-011df93368aa"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="ce8f5168-3859-4bf2-a936-9d7265740ec8">
+            <interfaceMoniker
+              Id="99f3f114-e331-4200-aae7-5bc63bc5d91a"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package7_2138.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="896f9111-3491-4e07-95c3-74d747f36aac"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5c26fdd-c4c9-4107-9c60-7bf04f36fd74"
+              LastKnownName="UserControl"
+              LastKnownLocation="Package5_2138.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="b46bcf52-8920-4f2a-bb6d-3a57cad1a6c5"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3421f682-5375-4045-9bd0-96e692bfea15"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTestDragAndDropView Member%3D_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="906e1584-399d-49bd-b4fc-f7ad97ea2c80"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b972023-2d5e-4a13-af03-1a0c2627ebb8">
+                    <propertyInstance
+                      Id="4ab47838-f828-4114-89ec-0a32841c9742"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c0d0b86-11dd-4ee5-b0b9-b2089a23a630">
+                    <propertyInstance
+                      Id="9010ec60-c671-4f90-83cf-4a3fb6286790"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f0fad79-761a-49e8-aca0-64474c5fa792">
+                    <propertyInstance
+                      Id="306c3a9c-963d-481e-8b87-5f629db8dd67"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="420fbb7e-ac82-405b-acec-640e28121078">
+                    <propertyInstance
+                      Id="be55e7d2-ec68-4e8e-a30b-142e68fa9a5d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9747d0ee-82b3-4543-b44d-c430257c61c2">
+                    <propertyInstance
+                      Id="ee49905c-0697-465b-9a8b-fa4ab1fff199"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ed220637-f16f-4380-88c3-45bc10e94a97"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="95471bcd-b6c6-48c5-b964-b9082161d5a1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTestDragAndDropView Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1995d4b6-d114-41e5-8604-abbf54de0518"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7ade015-a5d5-4dc3-a123-85e0a61cd2cf">
+                    <propertyInstance
+                      Id="74b6148f-6212-42b0-ba9f-eba7d487cc89"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fdeef54-23b1-4ebe-8cc0-c3dfcf6773fc">
+                    <propertyInstance
+                      Id="2e00327d-2a84-4f86-adcd-ae85c5a25e3f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1ae33a6-f95b-4e72-90ba-8f468fbbf9f1">
+                    <propertyInstance
+                      Id="0501ca5c-3ba5-4983-a07c-9b4aec47761a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e088d3f4-fe42-4a09-8c08-eba284ddb53a">
+                    <propertyInstance
+                      Id="36b2edc9-3555-4741-bc82-0fd6d718845b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="715bb276-25f0-41cf-9a24-b9a470089970">
+                    <propertyInstance
+                      Id="acccd3d0-41e6-4e4a-aac2-70753bdd6b73"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdb6bac8-1b23-4022-ba67-5d433db923b9">
+                    <propertyInstance
+                      Id="d6e2444f-96b9-45c9-a9a6-e027673d35a0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="c147dc7e-ee8b-4913-bb74-1869059731ae"
+            name="_CreateDelegate"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="015f0230-f711-47ab-8db6-86b9cd5686a4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTestDragAndDropView Member%3D(Name%3D_CreateDelegate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="db75c835-aedb-4df7-8285-058779865316"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9814d4c3-935a-4ee1-ac60-193762025646">
+                    <propertyInstance
+                      Id="90c2e5bf-d042-4ff8-89a1-2266a1da6c24"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b16a8ab6-3d63-4920-a27e-fc95b9dbd7cf">
+                    <propertyInstance
+                      Id="1f5d4493-42c2-4c2d-b53e-80e00d3c7e46"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8286dc7e-d98d-46d6-ae12-5fd50a986664">
+                    <propertyInstance
+                      Id="c528b552-6d29-4563-90ca-bb4904b24703"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45c15fcc-8d81-4eac-94f0-555e04421c5d">
+                    <propertyInstance
+                      Id="fe5bf3ab-31d9-4d3c-9906-4048872e4844"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b4e4797-1692-492a-b8b6-5f265525abc0">
+                    <propertyInstance
+                      Id="632c106c-4420-48ff-a309-62860d12f27d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de374b48-6a49-4418-bfef-9596138248fd">
+                    <propertyInstance
+                      Id="3b1d14a2-4476-4b84-8178-3ddbf6ed11e3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dde8c142-12f3-4947-b45a-583c7d8854df"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="456c7106-a1c0-448d-a105-7e2d3f0c9b3c"
+                      LastKnownName="Delegate"
+                      LastKnownLocation="Package1_2138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dd712e4f-3b0e-4fd7-ac69-247ee605cc20"
+                  name="delegateType"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="23cbdc44-d037-450a-bd7d-f6b1af3389ad"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTestDragAndDropView Member%3D(Name%3D_CreateDelegate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DdelegateType"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f4f54b70-aa5a-41e8-85c7-320cc17a0553"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package1_2138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6ef2254e-776e-44ed-80dd-3336ae83b3f4"
+                  name="handler"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="aa2a073d-0061-4e09-9dec-e2b815f33fd7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTestDragAndDropView Member%3D(Name%3D_CreateDelegate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dhandler"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="84336c4a-0905-4209-a180-820b0e983ace"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a6a5af49-1378-4d9c-8007-6d1808e78ce7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTestDragAndDropView Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4daeb790-7cf3-400e-bfd8-5b4aef7abd34"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="caf616ea-7db3-4d94-aa14-7d88d0f4bd76">
+                    <propertyInstance
+                      Id="9bcd2608-7081-425d-ae28-564074a53e1f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="656b843b-feb6-406d-bff8-f6b571acc58e">
+                    <propertyInstance
+                      Id="1b0a2355-a540-4e71-b8c3-89a1bf87dd5c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97df808c-de92-4415-a7b1-074603d737ba">
+                    <propertyInstance
+                      Id="9545b8a7-f493-4914-be4c-1e9564606cb4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5167f8f4-4a32-4458-84d6-66f1670a9a79">
+                    <propertyInstance
+                      Id="b149aa3b-c2ef-411e-ad6e-633a6a60a831"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09ccea36-3385-4966-90d5-8b16f3ace6b0">
+                    <propertyInstance
+                      Id="aecdd92a-5370-4613-b937-50866afcfc0d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbe6d491-9022-4f36-9b53-124e2211fec3">
+                    <propertyInstance
+                      Id="c2b59893-f40f-499b-8d39-bf03c50ad933"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9385d3e4-d227-4fc5-a53b-211e3ad3a855"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8403a0ff-e512-4168-971f-d68af696aef9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTestDragAndDropView Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fb7f9e78-af0b-4219-8894-e3620125ab04"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="83fc5c5e-8fb6-4d62-91b4-85bf403b02bf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTestDragAndDropView Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7a3c25f6-659b-4033-a2b5-426734375a7f"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c8eaeb7b-dbba-432a-a4f8-4e5cc8eff013"
+            name="TestDragAndDropView"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2931e0f2-a122-4bc1-bbac-39f12d06de3a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTestDragAndDropView Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="653ab5ef-f13e-4cae-b1d8-c2982e5e65c3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2f2ad73-5d6a-4c8d-9529-4b932be783da">
+                    <propertyInstance
+                      Id="b4913d1b-2081-4b14-836f-31e03cb71519"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb47ee06-d2bc-498d-a185-7a9a1029b422">
+                    <propertyInstance
+                      Id="b3945700-ca1e-4a80-98d9-dd14ab28ffdb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd6714b2-1d84-469a-a2d1-243bf9576064">
+                    <propertyInstance
+                      Id="8ec9b205-2f5a-48df-96a3-646658e634ad"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca620cc3-549a-47bb-8f0a-c7475bb6f64e">
+                    <propertyInstance
+                      Id="e03e6fa3-fac0-4b2d-8c3c-eecb032fa881"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4359f7a-4aa1-4d80-ae16-79853ecaebab">
+                    <propertyInstance
+                      Id="15de8b79-856c-48ed-9c53-56fa55a095a5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d633ce78-6d46-449e-aa31-34c8c2e23cea">
+                    <propertyInstance
+                      Id="0eed226c-ef0b-445f-90cf-c10ead90018f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3f193365-9bc9-4dd1-8c78-cb52f4a256ed"
+        name="TagsView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="7d2d366e-7f31-4446-ac29-a9470d659879"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagsView"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="afd54396-f479-43ac-9e37-4c85c790c7bd"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d991f2d8-869a-417d-847a-261528f70083">
+                <propertyInstance
+                  Id="0b42a114-a6aa-4086-b792-2aa4587a841e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="037f5e42-dc6d-48d9-8976-3dbae1a548ea">
+                <propertyInstance
+                  Id="522d4e90-4d70-41ce-b816-f584a1c3cad4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2f83b0cd-0926-4fef-b416-74d5825355dc">
+                <propertyInstance
+                  Id="31168a4f-d907-40fe-9fe4-1a318ccd5d85"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="51e4d5df-6dac-44ac-9d24-dff8f3d389c7">
+                <propertyInstance
+                  Id="c9b7816e-0c29-4c01-b1b4-ac427fa19521"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ff8cb729-8977-458b-877a-ff314ae9e7ae">
+                <propertyInstance
+                  Id="903e599c-2b81-4aed-bb6c-306923257934"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="5b7c1e75-5fbe-4809-8c93-68fe1233391a">
+            <interfaceMoniker
+              Id="99f3f114-e331-4200-aae7-5bc63bc5d91a"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package7_2138.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="8b51310a-8398-488c-ae8a-a6053e77547a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5c26fdd-c4c9-4107-9c60-7bf04f36fd74"
+              LastKnownName="UserControl"
+              LastKnownLocation="Package5_2138.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="3c1ab06b-0f40-4b49-94d8-a2c33c6f07f0"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="94eff19c-e041-44b3-9a5a-2ea80bb82632"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagsView Member%3D_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d5d67992-585e-463a-89be-759b429ad1d7"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="006d65d2-c876-4815-9195-6506a480bba7">
+                    <propertyInstance
+                      Id="61b327e6-0ed2-4805-9320-0acbdad7944b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70fba7df-3c6f-4326-9426-bb4f50d84495">
+                    <propertyInstance
+                      Id="2d0781fb-ad83-4601-a05c-328baea50d98"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e275d76-e115-4c5c-8680-3e6af8efb704">
+                    <propertyInstance
+                      Id="60e14126-8f5b-4cea-9f56-daadb492d131"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ac9cd71-d028-4b66-ad4f-d2bc394f993f">
+                    <propertyInstance
+                      Id="14a7b482-cfef-4f1e-808a-096c19f78e6f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52cfb5d1-d543-40d9-aeb1-7e7d09d1dbed">
+                    <propertyInstance
+                      Id="972fdc8b-d4f6-407c-9439-b8105eba04ad"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fb857285-f953-421e-8271-4f2a4555131d"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7637149b-5afa-4a48-9f6e-847d6d876996"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagsView Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="87a4d962-b6a3-46b9-90f2-ff9d3b31a135"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f586468-98da-4cbd-b43b-79146f97cace">
+                    <propertyInstance
+                      Id="3ae3b44e-1184-4a8e-8ad6-fa14542d6fda"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c869131-f53f-4908-838e-1b43db6e1231">
+                    <propertyInstance
+                      Id="73cfa981-e8a4-4022-897c-77b6ebcd2cea"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9649f641-de18-475e-bcf2-2a4181e62295">
+                    <propertyInstance
+                      Id="16450926-9df9-41f4-8722-e9d8407ffc09"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3914ce7b-511c-4d0c-b200-a079bf1a2477">
+                    <propertyInstance
+                      Id="ca92268a-72d9-4eb4-b404-a5182e927216"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="faba20b5-be9e-4bcc-ba98-abb8be15fed1">
+                    <propertyInstance
+                      Id="d128fd01-585e-41ad-9ea5-38a9c2239225"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22b3d817-c21c-4e00-a822-0676df9b19bc">
+                    <propertyInstance
+                      Id="69422fde-0db4-43f9-9ea6-50fe185f53f1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="1e3db676-1c8c-4093-b029-24cdef966f7a"
+            name="_CreateDelegate"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fe5ba1a9-c2f3-4b48-afd4-e08e4c7518bf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagsView Member%3D(Name%3D_CreateDelegate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="63bdeba1-d53e-4480-b275-7e3e0bdd6e3b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e698ac3-0858-43f8-a27c-54a9384634f6">
+                    <propertyInstance
+                      Id="6e7a262f-e58f-443a-be4c-29345059e9db"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75e0032d-a24b-4a0a-9b82-95309561ed81">
+                    <propertyInstance
+                      Id="7d4f33b3-6381-4573-abda-2136502c9372"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46c159f2-fefc-455b-97dc-458d76a10d10">
+                    <propertyInstance
+                      Id="f4f380c2-973d-477c-b218-fad714dcc7c9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff7743b9-1102-41c5-8110-17be3925c31b">
+                    <propertyInstance
+                      Id="df2b6639-9e0d-4f68-a01e-89dc2739997e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14cc6c12-a4b7-4b13-9d19-74c069e7d0d0">
+                    <propertyInstance
+                      Id="fbef030e-f15d-410a-8cc3-57ad72deb18d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3283fb77-5f0b-4129-9af8-312e3dadb028">
+                    <propertyInstance
+                      Id="f66b091a-5db6-4a7c-82e0-73e6024c866e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="86d5d5d0-ee95-4d47-bd59-5c4c7fed386d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="456c7106-a1c0-448d-a105-7e2d3f0c9b3c"
+                      LastKnownName="Delegate"
+                      LastKnownLocation="Package1_2138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8859d605-0d08-469c-a321-9d69d51be11e"
+                  name="delegateType"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e41c4498-8c86-4c58-ac0c-069144ed6cb1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagsView Member%3D(Name%3D_CreateDelegate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DdelegateType"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f4f54b70-aa5a-41e8-85c7-320cc17a0553"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package1_2138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="39ef77d7-9d9b-4283-81ce-31dd1a4a5e96"
+                  name="handler"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="90541fa3-aa90-4061-9f4f-cf766edb067b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagsView Member%3D(Name%3D_CreateDelegate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dhandler"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="28734b36-8b30-4151-a3b3-e39d12f3093d"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1ea47b23-42f6-4c8c-a7b9-7c97cf109620"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagsView Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c67ce84a-b82e-406e-a5c9-460ec9f6e210"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3f88787-7c26-4770-974f-bfe144d562f3">
+                    <propertyInstance
+                      Id="71d25b3b-2958-4f5f-ae2e-9d133a1e212b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="752855d0-9c21-4fed-8f8f-5a6bba14d5ed">
+                    <propertyInstance
+                      Id="037e339d-99ac-44ec-a03b-502850902b9a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73e6f13e-2d5f-4108-81c5-ac5dc744e674">
+                    <propertyInstance
+                      Id="71e5852f-f47a-4932-81f1-a92ccdfe168b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2931658-4c23-48dd-a644-6e3afa30b400">
+                    <propertyInstance
+                      Id="1d51aad6-8a6e-412c-a139-075188263fee"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc947787-1f26-457c-be3a-030f3c70ded6">
+                    <propertyInstance
+                      Id="75997611-be5d-42d6-8a42-30ed56d8e6d7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69f318da-18f8-4f0a-a371-0b5d4a2cce9d">
+                    <propertyInstance
+                      Id="f45b6fb5-f390-4623-abe5-b0ee77010c0d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eb04302d-d290-4a2d-be35-95af8d051714"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4c696ecd-9ca7-487c-a58c-50d36cf83f4f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagsView Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="15af15d4-bf61-4d88-ac2c-90179cb16533"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4eaf17ed-608a-4aa6-a31d-e8eb3a91f51b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagsView Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7a3c25f6-659b-4033-a2b5-426734375a7f"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5a5b8f3a-6875-420a-8eb9-64caab0e244d"
+            name="TagsView"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="63daa641-c375-48ca-8256-f34e12689da0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DTagsView Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="84d31e6c-e229-4d34-a818-85b852d63486"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2bcfe89-1ef2-4a2f-a7c1-123e9d06565a">
+                    <propertyInstance
+                      Id="7de092c9-093a-4986-a142-ebe3c1ea5f43"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a4a8a12-3f88-4fb8-9749-a93cc2d19cfe">
+                    <propertyInstance
+                      Id="0e60c662-cfa7-429d-8153-c83d0c92a6dd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b0072aa-ac4c-4488-be84-865700beb975">
+                    <propertyInstance
+                      Id="74e42760-91ac-4253-a3f6-2824249cfa51"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e655ef5-7b81-4302-a9d8-ff03ad3bd968">
+                    <propertyInstance
+                      Id="f74c4610-9b50-411c-b703-f37b9ed3b33f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="216b5dc3-8334-4938-ba79-7c694538931e">
+                    <propertyInstance
+                      Id="f1ab84f1-c90c-4550-876a-5befd772e4de"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="411027aa-a340-46a6-a553-523c16f29858">
+                    <propertyInstance
+                      Id="55c3c8b5-da8f-4cea-8a0f-392236aee2ba"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1927bdd1-b7d6-478b-b50f-3bf9d0ed40c1"
+        name="UserControl2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="46aff7be-93ac-424c-a465-0706c3a78335"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl2"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="486b22ba-50ad-4ff8-bc1d-0fb570c49ecb"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="401be21d-a291-414c-bbf5-4502cc2ae1c6">
+                <propertyInstance
+                  Id="0e2d5d7d-6711-46f2-8dd8-fcd1a5066a2f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="080cf9ca-cdf7-4d42-af50-2b9f39f8dc2e">
+                <propertyInstance
+                  Id="9390e1a9-ab07-482a-ad83-3692e9c536dc"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="20b58522-91d7-4a14-8c76-76f05ce285ab">
+                <propertyInstance
+                  Id="74a77fc5-97d2-4eeb-9158-94d7b7fc375d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6b2f6ffd-e160-4f49-80b6-eba9c15878c2">
+                <propertyInstance
+                  Id="512136b3-acea-4ae6-841d-be6fe55f9200"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a1a215e3-b6ef-4fd6-a666-6c953cd1b742">
+                <propertyInstance
+                  Id="a9775f8a-ce38-4db7-a604-dca2b5acb2c0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="72c49b18-48da-492c-b273-739832cbe230">
+            <interfaceMoniker
+              Id="99f3f114-e331-4200-aae7-5bc63bc5d91a"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package7_2138.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="9c75e73a-0809-438b-b95d-67eeb46fca6a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5c26fdd-c4c9-4107-9c60-7bf04f36fd74"
+              LastKnownName="UserControl"
+              LastKnownLocation="Package5_2138.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="ef0770ac-f821-4b48-94b3-a01ecb52b15b"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c268c138-809a-4df2-a95d-a4af866eeaa5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl2 Member%3D_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cd30d2ee-4e63-4266-a87f-9d99c0f19122"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bfd8638-3404-4aab-bb6a-e9f7bb0c5ac5">
+                    <propertyInstance
+                      Id="672d3b3a-0112-4830-bb83-b9b839c527b1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e432cd9-09a0-4a97-be16-fe6a67d1c880">
+                    <propertyInstance
+                      Id="e6419083-93b3-4d84-90bc-5bc4cac2bc6e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db2d7733-95ee-40b6-8c80-34e8a13fa295">
+                    <propertyInstance
+                      Id="291d3ac6-783a-437a-b519-41ff8f55393d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b84bce7f-b54d-4786-a555-ea6f2839ad72">
+                    <propertyInstance
+                      Id="82e236fb-9995-4656-9209-2d0e29fb67c9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32318260-2590-4dc6-b2b6-b4ad81377b60">
+                    <propertyInstance
+                      Id="18b98ace-8b00-45d9-8f66-9c7aecaecb62"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2a319563-0499-4c05-98a8-6603db0e21dd"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7ca883a7-2eb3-4f17-a2ad-29a0e94cfa97"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl2 Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2ac48faa-36ac-4218-a74d-3cba20da32f3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02facf61-d9f3-4d6a-a8d5-deb4b6c576a3">
+                    <propertyInstance
+                      Id="53f6fac8-03a1-4efa-bf5d-619da793590d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70c02ca2-c608-4c6f-bac5-160899ec1dd5">
+                    <propertyInstance
+                      Id="778682eb-f20c-43d4-9933-7957133dbea7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="640578e9-beff-49fd-9295-99bf0dd5b34e">
+                    <propertyInstance
+                      Id="cf39aca3-cb53-4563-9962-480911baf84b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ab13903-56ce-4515-99eb-dcfb15a37f58">
+                    <propertyInstance
+                      Id="2e544b1d-5712-477e-ab82-bf8c4bf2cdac"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34164bc7-652a-47bd-aec7-34a724dcf482">
+                    <propertyInstance
+                      Id="5966bb55-acb4-4d4e-a9b3-d69b3f8b50e7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75cf7d0e-493d-4629-938e-ec090ed86058">
+                    <propertyInstance
+                      Id="4034d766-16cb-45d3-9747-b21f6bfcd346"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="8fdb022d-5481-4fb8-abb5-3366cc8748d2"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="098a607c-a1fc-4ed7-b9fe-c33afe4ea254"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl2 Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0f4bcdac-a4cc-49df-a556-9e8bd8880d42"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b60feaac-f2fd-4a24-8f51-eab005811329">
+                    <propertyInstance
+                      Id="99ebe09b-f965-4711-8398-9f681dacd9e0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4c14655-6259-437e-85cf-f1231597eac3">
+                    <propertyInstance
+                      Id="2d5960b4-af8b-4c8b-85a8-677866958721"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38fa8f81-16e1-4db0-9fc5-9bec1e2d5a85">
+                    <propertyInstance
+                      Id="8f017a09-8e36-499f-aa6e-e0e9c49ca57e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ab3935e-a6d9-4a11-acf5-d51040e4bb05">
+                    <propertyInstance
+                      Id="e0ba730d-c827-4f0a-8614-0f096382913d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de06e252-4b99-4da8-b117-00f45c5b7944">
+                    <propertyInstance
+                      Id="29dee411-b8b7-4feb-8c23-61c63490aa3d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8345cde-aaf0-40dc-badb-79a9eeb71f85">
+                    <propertyInstance
+                      Id="69520b6a-9c3a-4ec1-b685-6d6698682331"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f06a6fa9-64d9-45cb-8dca-aca782f5b0e7"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="86341046-cfbf-4006-822d-0f8bb842dc9b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl2 Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6b770fb1-205f-423b-9792-4202b739cde1"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="953f20ea-4bfd-4045-a1dc-63d2109535a6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl2 Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7a3c25f6-659b-4033-a2b5-426734375a7f"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="31d03cb3-aa83-4e34-bee3-179cceb3180b"
+            name="UserControl2"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e9efbdec-4edc-4543-a2ce-3ce644e3a0fb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl2 Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dab3602d-6ec6-4b87-a3da-6b023ff68206"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd93d0f0-c82a-4b5c-b89a-447ca2335053">
+                    <propertyInstance
+                      Id="5dc5c1d2-ed15-464e-9a67-530d6aac84e6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29633d35-d6ad-48de-9af2-21b16383c713">
+                    <propertyInstance
+                      Id="064b381a-df4e-4845-9e70-93f8fcb1b995"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2cfc2b3-c844-4c89-b376-3b387fefa6d2">
+                    <propertyInstance
+                      Id="35a83c5f-4c57-4065-8412-f03fec9babca"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f175b036-884c-4ea9-a4eb-e602e84e0736">
+                    <propertyInstance
+                      Id="c74f87ab-7714-482a-9a59-aa1e4b4253ea"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e21fbd3-a4b5-4c6f-aaf1-a56a680e8cb3">
+                    <propertyInstance
+                      Id="9793b4c8-de84-4fab-86cc-cda5bf25773a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5759dce4-a89a-468b-b9f2-81064a17f26a">
+                    <propertyInstance
+                      Id="c39db66f-556a-4293-9a2b-d67481ebf998"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ea2c1823-d8e5-4040-a7cd-6200b836f76d"
+        name="UserControl1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d36c34a9-d7d0-4c70-94fd-6ce5177bc29e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl1"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="67c7d0b2-2333-4831-9a90-1da39d7c515f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a46e02d1-e530-4ec0-b4b7-fa85d1afef17">
+                <propertyInstance
+                  Id="7006a334-bee9-40e8-a357-cc4bbcab1b0e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c4b48417-81ef-4f2d-b205-21c47960cf0b">
+                <propertyInstance
+                  Id="66197776-0b00-4c2c-90b6-e8ec94a86ece"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5ebf4598-2fee-4776-a086-a9dc547477c7">
+                <propertyInstance
+                  Id="cebe5f5f-d854-4fe8-b289-bcea9437f3fc"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="711391ad-cf60-4341-9b42-979d967a1c3a">
+                <propertyInstance
+                  Id="5a45b04a-2156-4f7f-86b9-93e90235aafc"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dab00163-e152-46aa-ad35-0e70f64bcf73">
+                <propertyInstance
+                  Id="e14c0cbf-7048-4152-80f3-0b47d759893e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="42a5957d-acd0-44ed-8b3a-d007078378dd">
+            <interfaceMoniker
+              Id="99f3f114-e331-4200-aae7-5bc63bc5d91a"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package7_2138.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="c8cc5826-bc28-40de-8363-67ebdcc4e76a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5c26fdd-c4c9-4107-9c60-7bf04f36fd74"
+              LastKnownName="UserControl"
+              LastKnownLocation="Package5_2138.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="6bc91166-f638-4738-85b7-1c959d44c4d3"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e5826710-d290-461d-9a67-7129aaacf76e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl1 Member%3D_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="097883bc-d7be-4652-a27b-b86b935896c9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53362a32-150c-47eb-8f6d-d2d4b5dc2675">
+                    <propertyInstance
+                      Id="73622306-3914-4f3f-b7f4-ebe015e4d94c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21992655-f6c1-45c6-b918-a7e955f77d69">
+                    <propertyInstance
+                      Id="dbaa38cd-e576-4771-85af-744b6c9412f5"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aeb21ab2-bdc4-4e31-9d07-de0144f88d87">
+                    <propertyInstance
+                      Id="e3eff44a-8d5c-4b37-ab36-b501a84f1d9a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f972f97f-3b51-4d18-9a46-e4275284349b">
+                    <propertyInstance
+                      Id="08434598-33aa-4b1f-b206-ead31caa0895"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60559981-61af-4eed-888c-2985946af517">
+                    <propertyInstance
+                      Id="c0d901f0-d731-4572-a6aa-7f7e8677f4f3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4757dca7-f697-4370-b249-1e4be6053ac2"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8eb32150-b141-443a-9e93-9800f8c5a96c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl1 Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0e2f7c0e-6ca1-4853-92f0-79505750b59c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e275f020-ab8a-48a7-8034-50c9b8ba9d40">
+                    <propertyInstance
+                      Id="4a7f7d24-5033-4584-97d4-388a92a71776"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52329ea0-8c86-4e0d-9353-70b7c4f7ba76">
+                    <propertyInstance
+                      Id="ef76ef77-6d85-4589-b51f-b9470dc64985"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed863d4b-d82e-4822-afd8-4e10c07d2f52">
+                    <propertyInstance
+                      Id="cfb5b884-7899-4562-a0c7-3b2a0ab3b679"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5878581e-81e7-4bdb-8711-1751d29c43f7">
+                    <propertyInstance
+                      Id="4b693cf7-1e71-458e-98e9-0cefc550898b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aba1448b-b0ae-446f-8387-b4a93049a7b1">
+                    <propertyInstance
+                      Id="5d511c79-f16f-4fb6-8def-d44d6675f60f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3aa33564-2009-4a5b-8f08-f8a7150a9381">
+                    <propertyInstance
+                      Id="480fd10a-6734-4bd7-9860-231716c0b089"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="21223ae3-2fb0-41c4-ae75-f4157fa185f5"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="051e3cb3-9bd6-4173-b1d7-49d386ee782b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl1 Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5af73b65-24c4-4f6f-8c2a-f79125bcb7a6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5df2ff4a-0a98-445d-8e9e-53366b9da9b3">
+                    <propertyInstance
+                      Id="79f7474c-3236-4d3f-9f7a-a8c91e17c2a9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6bf036d-08bd-4faf-acfd-0d7d26829f21">
+                    <propertyInstance
+                      Id="c9789991-92c7-46b5-ad9d-f0a6dbe923d2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cabb4866-76b2-4908-9871-db2caeed7879">
+                    <propertyInstance
+                      Id="8f754a36-16f1-4f64-a86c-f077b388a7b9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5159b42a-169b-4664-ba29-4d95704fae81">
+                    <propertyInstance
+                      Id="9bdc010d-e614-4729-a365-6564f155c96b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49edff18-34a6-4039-a3a0-63244729b003">
+                    <propertyInstance
+                      Id="2369c86e-0419-4e8a-8559-cfbeb7bc7539"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="823e31f9-ebbe-40d3-b9d1-a834d41bc5cb">
+                    <propertyInstance
+                      Id="cde81148-4bde-450d-8041-6f2150979a59"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="23963f98-6823-4f6b-b450-56fb3a1416fa"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="01aa55b2-9839-4925-9d64-a3bcd9bd9401"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl1 Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="53b85ae0-d338-4b35-a811-1c93a1b3136c"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="abe5318a-54da-4ed4-a916-6ea36e1abac0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl1 Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7a3c25f6-659b-4033-a2b5-426734375a7f"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5455afe9-b19e-4a57-aa78-ab424a9d52ec"
+            name="UserControl1"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2cd698d9-d9d1-41c3-b4a1-5dcaa44af8d6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FSadako%2Fdocuments%2Fvisual studio 2013%2FProjects%2FMultimediaManager%2FMultimediaManager%2Fbin%2FRelease%2FMultimediaManager.exe&quot; Namespace%3DMultimediaManager.Views Type%3DUserControl1 Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="247756ef-ef7d-4049-a92a-0cd7eae421a6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a235319a-f3c0-4e12-9384-483cbda28bca">
+                    <propertyInstance
+                      Id="4b2e5636-06e2-46cb-8904-722c6f8d7f93"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5c04252-d04c-4943-b767-c536c015869b">
+                    <propertyInstance
+                      Id="a531347e-fa4e-4888-a685-511520ffc2f8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30fdac8f-9aa4-4fb7-a597-ce6ec78a4484">
+                    <propertyInstance
+                      Id="e94c04da-9b3d-4156-86cd-53296c059093"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="897de0e3-0fc0-42ea-90d4-ad89fc1ab408">
+                    <propertyInstance
+                      Id="6f96831e-a04e-4334-a964-eafb78fb1699"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="258ada24-5fbd-41e0-9e38-fdb8f6ea98df">
+                    <propertyInstance
+                      Id="e25f1cde-2c1a-4876-95f9-d48512d8dd11"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c4c18eb-7f5b-4018-bb4c-ade49030635f">
+                    <propertyInstance
+                      Id="fbc808ab-a7ca-4638-b120-be41a3c278ac"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

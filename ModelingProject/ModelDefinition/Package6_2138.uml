@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="05d3a33d-af78-42bd-8d38-d1a65a7093cc"
+  name="Ribbon"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="b1c0cecc-245d-49e0-a875-d351ccd37fbd"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Windows.Controls.Ribbon"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6ed7d5dd-a561-4b0c-959c-037626abdf8d"
+        name="Ribbon"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="12e83998-43f2-43b4-b272-e7b354d8c6d2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Windows.Controls.Ribbon.dll&quot; Namespace%3DSystem.Windows.Controls.Ribbon Type%3DRibbon"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a2970a87-48a5-464d-b717-35550aeffb0b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a4cfc2f7-79c4-47ae-84c1-06f9132d980f">
+                <propertyInstance
+                  Id="a7bfc430-75b1-4782-9829-36e1d2130c7b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="53a61c3b-480e-4d74-bb59-447a21cb7c11">
+                <propertyInstance
+                  Id="618505f2-efba-4944-a244-3a8ebdd76f06"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af1cb208-06ce-46fc-8c2c-7fff71dbcfb0">
+                <propertyInstance
+                  Id="37b88fec-4095-495e-a59a-88ef9832cc9d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2ff5e794-d4da-4b91-8b1c-370d3021477e">
+                <propertyInstance
+                  Id="cf23e914-7176-4af5-b58d-df9ffe28645b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e2fc67b7-8c9a-44d1-9e11-72f73acd8078">
+                <propertyInstance
+                  Id="321e27ce-dbbb-4fde-99fd-e2ac9afa9f0f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="27006c56-6853-4720-bc45-b8f7b9180081"
+        name="RibbonWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6024ed78-7d4d-4059-ac45-941973ebd0b4"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Windows.Controls.Ribbon.dll&quot; Namespace%3DSystem.Windows.Controls.Ribbon Type%3DRibbonWindow"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="92361c4f-5e89-4eef-9f72-8bd46af23496"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="be7838ac-5db0-4db8-88e7-42a7c168501a">
+                <propertyInstance
+                  Id="c99d8faf-08cc-4ed8-9a84-0636aa0f0f2b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9ca05d40-3628-4c3f-94c1-d2b7deca3404">
+                <propertyInstance
+                  Id="72624cbe-4a6b-46ed-9e92-66721e1e8df5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15c8c166-4842-40da-90ba-82933d0d9264">
+                <propertyInstance
+                  Id="66d4b062-588d-4209-9546-5603010ab039"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ca7fff77-a564-47e5-a256-d9ba6ef95955">
+                <propertyInstance
+                  Id="10fa41c4-a625-4be8-be29-5f19cf959005"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8b556946-96fa-49e8-bb1e-f440c2aab026">
+                <propertyInstance
+                  Id="697a223c-c735-4f4b-a5c4-e5766b3edc1e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

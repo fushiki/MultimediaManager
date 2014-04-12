@@ -1,0 +1,57 @@
+﻿<RibbonWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local ="clr-namespace:MultimediaManager"
+        xmlns:fsTreeView ="clr-namespace:MultimediaManager.Core.FileSystemTreeViews;assembly=MultimediaManager.Core"
+        xmlns:properties="clr-namespace:MultimediaManager.Properties"
+        x:Class="MultimediaManager.MainWindow"
+    x:Name="Window"
+        Height="500" Width="700" MinWidth="700" MinHeight="500"
+    >
+    <Window.Resources>
+        <ResourceDictionary Source="MainWindowResources.xaml" />
+    </Window.Resources>
+    <DockPanel>
+
+        <Ribbon x:Name="Ribbon" DockPanel.Dock="Top" Title="Multimedia Manager" KeyboardNavigation.ControlTabNavigation="Contained">
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu SmallImageSource="Resources\pc.png">
+                    <RibbonApplicationMenuItem Header="Help" ImageSource="Resources\help.png" KeyTip="H" />
+                    <RibbonApplicationMenuItem 
+                        Header="Exit"
+                        ImageSource="Resources\exit.png"
+                        KeyTip="E"
+                        Command="{Binding Path=CloseCommand}"/>
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+            <RibbonTab Header="Operations">
+                <RibbonGroup>
+                    <RibbonButton
+                        LargeImageSource="Resources\duplicate.png"
+                        Label="Remove Duplicates"
+                        Command="{Binding Path=OpenCommand}"
+                        CommandParameter="{Binding Path=DuplicateView}"
+                        KeyTip="D"/>
+                    <RibbonButton 
+                        LargeImageSource="Resources\tag.png"
+                        Label="Tag"
+                        Command="{Binding Path=OpenCommand}"
+                        CommandParameter="{Binding Path=TagsView}"/>
+                </RibbonGroup>
+            </RibbonTab>
+            <RibbonTab Header="Manage Views">
+                <RibbonGroup>
+                    <RibbonButton Label="TestDragAndDrop" Click="RibbonButton_Click_2"/>
+                </RibbonGroup>
+            </RibbonTab>
+        
+            <RibbonTab Header="Help">
+                <RibbonButton Label="TestCommand" Command="{Binding Path=OpenCommand}" CommandParameter="{Binding Path=Test}"/>
+            </RibbonTab>
+
+        </Ribbon>
+        <Border>
+            <ContentControl Content="{Binding Path=CurrentView}" />
+        </Border>
+        </DockPanel>
+</RibbonWindow>
