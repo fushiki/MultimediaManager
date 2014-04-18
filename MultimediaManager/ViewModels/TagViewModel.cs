@@ -1,5 +1,6 @@
 ﻿using MultimediaManager.Core;
 using MultimediaManager.Core.FileSystem;
+using MultimediaManager.Mp3;
 using System;
 using System.Collections.Generic;
 using System.Linq;

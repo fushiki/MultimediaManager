@@ -15,8 +15,8 @@ namespace MultimediaManager.ViewModels
 
         public TestDragAndDropViewModel()
         {
-            _left = Managment.TreeViewManager.Instance.CreateTemporaryFileSystemTreeViewModel();
-            _right = Managment.TreeViewManager.Instance.CreateTemporaryFileSystemTreeViewModel();
+            _left = TreeViewManager.Instance.CreateTemporaryFileSystemTreeViewModel();
+            _right = TreeViewManager.Instance.CreateTemporaryFileSystemTreeViewModel();
             Directory d1,d2,d3;
             d1 = new TemporaryVirtualDirectory("","Dir1");
             d2 = new TemporaryVirtualDirectory("","Dir2");

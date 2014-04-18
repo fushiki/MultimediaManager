@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MultimediaManager.Core;
+using MultimediaManager.Mp3;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,46 @@ namespace MultimediaManager.Views
     /// </summary>
     public partial class DuplicateView : UserControl
     {
+        private Player player;
+
+        private void check()
+        {
+            if(player == null)
+            {
+                player = (Player)CoreSettings.Instance.GlobalObjects[MusicModule.KeyPlayer];
+                string file = "C:\\Temp\\test - Copy.mp3";
+                MultimediaManager.Mp3.TaglibAudioFile afile = new MultimediaManager.Mp3.TaglibAudioFile(file);
+
+                player.LoadSong(afile.SongStream);
+            }
+        }
         public DuplicateView()
         {
             InitializeComponent();
+        }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            check();
+            float f = (float)(e.NewValue / 100);
+            player.Rewind(f);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            check();
+            player.Stop();
+        }
+
+        /// <summary>
+        /// Play
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            check();
+            player.Play();
         }
     }
 }

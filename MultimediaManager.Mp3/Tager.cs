@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace MultimediaManager.Mp3
 {
-    abstract class Tager
+    public abstract class Tager:IDisposable
     {
+        public abstract String Artist { get; set; }
+        public abstract String Title { get; set; }
+
+        public abstract void Dispose();
+
+        public abstract void Save();
     }
 }

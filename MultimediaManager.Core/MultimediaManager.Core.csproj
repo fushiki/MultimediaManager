@@ -30,10 +30,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.92.0\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.92.0\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.92.0\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseViewModel.cs" />
+    <Compile Include="BufferFileManager.cs" />
+    <Compile Include="CoreModule.cs" />
+    <Compile Include="Database\TreeViewDatabasEntity.cs" />
     <Compile Include="FileSystemTreeViews\ContainStringFilter.cs" />
     <Compile Include="FileSystemTreeViews\DirectoryViewModel.cs" />
     <Compile Include="FileSystemTreeViews\FileSystemEntityViewModel.cs" />
@@ -57,10 +76,8 @@
     <Compile Include="FileSystemTreeViews\FileViewModel.cs" />
     <Compile Include="FileSystemTreeViews\IUsingFileSystemTree.cs" />
     <Compile Include="FileSystemTreeViews\TreeViewHelper.cs" />
-    <Compile Include="FileSystem\AudioFile.cs" />
     <Compile Include="FileSystem\DatabaseVirtualDirectory.cs" />
     <Compile Include="FileSystem\Directory.cs" />
-    <Compile Include="FileSystem\DumpAudioFile.cs" />
     <Compile Include="FileSystem\File.cs" />
     <Compile Include="FileSystem\FileCreator.cs" />
     <Compile Include="FileSystem\FileSystemEntity.cs" />
@@ -76,7 +93,10 @@
     <Compile Include="Filters\ExtensionFilter.cs" />
     <Compile Include="Filters\Filter.cs" />
     <Compile Include="Filters\SingleFilter.cs" />
+    <Compile Include="IProgram.cs" />
+    <Compile Include="ISettings.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="MessageDialog.cs" />
     <Compile Include="Modules\Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RelayCommand.cs" />
@@ -84,12 +104,27 @@
     <Compile Include="SafeDictionary\SafeDictionary.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="SettingsDictionary.cs" />
+    <Compile Include="Database\SQLiteTreeDatabase.cs" />
+    <Compile Include="Database\SQLiteTreeException.cs" />
+    <Compile Include="TreeViewManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="FileSystemTreeViews\FileSystemTreeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="x64\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultimediaManager.Core.Modules;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,13 @@ using System.Threading.Tasks;
 
 namespace MultimediaManager.Core.FileSystem
 {
-    public abstract class File : FileSystemEntity
+    public abstract class File : FileSystemEntity,IDisposable
     {
+        public abstract Module ParentModule { get; }
+        public virtual void Dispose()
+        {
+
+        }
         public override string Extension
         {
             get { return System.IO.Path.GetExtension(_path); }

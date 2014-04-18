@@ -3,13 +3,14 @@ using MultimediaManager.Core.Modules;
 using MultimediaManager.Mp3;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MultimediaManager.Managment
 {
-    public sealed class Program
+    public sealed class Program:IProgram
     {
         #region Singleton
 
@@ -23,22 +24,35 @@ namespace MultimediaManager.Managment
         
         #endregion
 
+
+        
+
         private Program()
         {
         }
 
         public void Initialize()
         {
-            Settings.Instance.Initialize(GetModules());
+            CoreSettings.Instance.Initialize(this);
+
         }
 
 
 
         public string[] GetPartitions()
         {
-            String exepath = System.AppDomain.CurrentDomain.BaseDirectory;
+            //String exepath = System.AppDomain.CurrentDomain.BaseDirectory;
             //HARDCODED FOR ITERATION 1
-            return new String[] { exepath };
+            DriveInfo[] allDrives = DriveInfo.GetDrives();
+            List<String> partitions = new List<string>();
+            foreach(var di in allDrives)
+            {
+                if(di.IsReady)
+                {
+                    partitions.Add(di.Name);
+                }
+            }
+            return partitions.ToArray();
         }
 
         public IList<Module> GetModules()
@@ -48,6 +62,15 @@ namespace MultimediaManager.Managment
             musicmodule.IsInstalled = true;
             list.Add(musicmodule);
             return list;
+        }
+
+        public void DisposeModules()
+        {
+            foreach(Module m in CoreSettings.Instance.Modules.Values)
+            {
+                m.Dispose();
+            }
+            CoreSettings.Instance.Modules.Clear();
         }
     }
 }

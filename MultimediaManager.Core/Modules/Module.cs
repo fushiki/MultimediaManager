@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MultimediaManager.Core.Modules
 {
-    public abstract class Module
+    public abstract class Module:IDisposable
     {
         public abstract List<Filter<FileSystemEntity>> Filters { get; }
         //public abstract List<DuplicateComparer> DuplicateComparers { get; }
@@ -20,23 +20,29 @@ namespace MultimediaManager.Core.Modules
             return null;
         }
         /// <summary>
-        /// String is property name and object is default value
+        /// This method is called when settings are loaded.
+        /// In this method shoudl be initialized objects based on settings.
         /// </summary>
-        public abstract IList<KeyValuePair<string, object>> Properties { get; }
+        public abstract void Setup();
+
+        public abstract IList<KeyValuePair<string, ISettings>> Settings { get; }
+        public abstract IList<KeyValuePair<string, Object>> GlobalObjects { get; }
 
         public bool IsExtensionRecognizable(string path)
         {
             string ext = System.IO.Path.GetExtension(path);
-            foreach(string mext in Extensions)
-            {
-                if(mext.Equals(ext))
-                {
-                    return true;
-                }
-            }
-            return false;
+            return Extensions.Contains(ext);
+
         }
 
         public abstract string Name { get; }
+
+        public abstract void Dispose();
+
+        public virtual BaseViewModel GetViewModel(File filetype)
+        {
+            return null;
+        }
+
     }
 }

@@ -81,5 +81,11 @@ namespace MultimediaManager.ViewModels
         {
 
         }
+
+        protected override void OnRequestClose()
+        {
+            MultimediaManager.Managment.Program.Instance.DisposeModules();
+            base.OnRequestClose();
+        }
     }
 }

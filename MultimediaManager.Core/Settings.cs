@@ -1,4 +1,5 @@
-﻿using MultimediaManager.Core.Modules;
+﻿using MultimediaManager.Core.FileSystem;
+using MultimediaManager.Core.Modules;
 using MultimediaManager.Core.SafeDictionary;
 using System;
 using System.Collections.Generic;
@@ -8,82 +9,90 @@ using System.Threading.Tasks;
 
 namespace MultimediaManager.Core
 {
-    public class Settings
+    public class CoreSettings
     {
-        private static Settings instance;
+        #region Singleton
+        private static CoreSettings instance;
 
-        public static Settings Instance
+        public static CoreSettings Instance
         {
             get { return instance; }
         }
 
-        static Settings() { instance = new Settings(); }
-        private Settings() 
+        static CoreSettings() { instance = new CoreSettings(); }
+
+        #endregion
+        private CoreSettings() 
         {
-            _settingsDictionary = new SafeDictionary<string, object>(); 
+            _settingsDictionary = new SafeDictionary<string, ISettings>();
+            _globalObjects = new SafeDictionary<string, object>();
         }
 
+        private Dictionary<string, Module> _extensionMap;
+        public Dictionary<string, Module> ExtensionMap { get { return _extensionMap; } }
+        private Dictionary<string, Module> _modules = new Dictionary<string, Module>() { };
+        private IProgram _program;
 
-        private List<Module> _modules = new List<Module>() {  };
+        public ITreeDatabase Database { get { return null; } }
+        public IProgram Program { get { return _program; } }
 
-        public void Initialize(IList<Module> modules)
+        private void LoadDictionary<T>(Module m,IList<KeyValuePair<string,T>> properties, IDictionary<string,T> dictionary)
         {
-            foreach(Module m in modules)
-            {
-                if (m.IsInstalled)
-                {
-                    _modules.Add(m);
-                    var properties = m.Properties;
-                    bool has = false;
-                    StringBuilder logError =new StringBuilder( String.Format("Cannot load module {0}. Existring properties: ", m.Name));
+            bool has = false;
+            StringBuilder logError = new StringBuilder(String.Format("Cannot load module {0}. Existring properties: ", m.Name));
 
-                    _settingsDictionary.Block();
-                    foreach(var prop in properties)
-                    {
-                        if(_settingsDictionary.ContainsKey(prop.Key))
-                        {
-                            has = true;
-                            logError.AppendLine(prop.Key);
-                        }
-                    }
-                    if(has)
-                    {
-                        Logger.Error(logError.ToString());
-                    }
-                    else
-                    {
-                        foreach(var prop in properties)
-                        {
-                            _settingsDictionary.Add(prop);
-                        }
-                    }
-                    _settingsDictionary.Release();
+            foreach (var prop in properties)
+            {
+                if (dictionary.ContainsKey(prop.Key))
+                {
+                    has = true;
+                    logError.AppendLine(prop.Key);
+                }
+            }
+            if (has)
+            {
+                Logger.Error(logError.ToString());
+            }
+            else
+            {
+                foreach (var prop in properties)
+                {
+                    dictionary.Add(prop);
                 }
             }
         }
+        public void Initialize(IProgram program)
+        {
+            _program = program;
+            foreach(Module m in program.GetModules())
+            {
+                if (m.IsInstalled)
+                {
+                    _modules[m.Name]=m;
+                    _settingsDictionary.Block();
+                    LoadDictionary<ISettings>(m, m.Settings, _settingsDictionary);
+                    _settingsDictionary.Release();
+                    m.Setup();
+                    _globalObjects.Block();
+                    LoadDictionary<object>(m, m.GlobalObjects, _globalObjects);
+                    _globalObjects.Release();
+                }
+            }
+            _extensionMap[".mp3"] = _modules["Music Module"];
+        }
 
-        public List<Module> Modules
+        public Dictionary<string,Module> Modules
         {
             get { return _modules; }
         }
         
         #region Settings
 
-        private SafeDictionary<string, object> _settingsDictionary;
+        private SafeDictionary<string, ISettings> _settingsDictionary;
+        private SafeDictionary<string, Object> _globalObjects;
 
-        public object this[string key]
-        {
-            get
-            {
-                return _settingsDictionary[key];
-            }
-            set
-            {
-                _settingsDictionary[key] = value;
-            }
-        }
-
-        public IDictionary<String, Object> Properties { get { return _settingsDictionary; } }
+        public IDictionary<string, object> GlobalObjects { get { return _globalObjects; } }
+        public IDictionary<String, ISettings> Settings { get { return _settingsDictionary; } }
         
         #endregion
     }

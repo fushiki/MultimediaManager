@@ -11,6 +11,8 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject", "Modeling
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultimediaManager.Mp3", "MultimediaManager.Mp3\MultimediaManager.Mp3.csproj", "{E25C94F4-9AAC-4317-8B44-2A30D8C0354B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{E9A6DE90-DEE0-4A72-B156-4FBEA65E5BCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E25C94F4-9AAC-4317-8B44-2A30D8C0354B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E25C94F4-9AAC-4317-8B44-2A30D8C0354B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E25C94F4-9AAC-4317-8B44-2A30D8C0354B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A6DE90-DEE0-4A72-B156-4FBEA65E5BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A6DE90-DEE0-4A72-B156-4FBEA65E5BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A6DE90-DEE0-4A72-B156-4FBEA65E5BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A6DE90-DEE0-4A72-B156-4FBEA65E5BCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

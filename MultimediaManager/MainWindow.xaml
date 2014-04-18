@@ -37,9 +37,10 @@
                         Label="Tag"
                         Command="{Binding Path=OpenCommand}"
                         CommandParameter="{Binding Path=TagsView}"/>
-                </RibbonGroup>
+                    <RibbonButton Label="Play" Click="RibbonButton_Click_3"/>
+                  </RibbonGroup>
             </RibbonTab>
-            <RibbonTab Header="Manage Views">
+                <RibbonTab Header="Manage Views">
                 <RibbonGroup>
                     <RibbonButton Label="TestDragAndDrop" Click="RibbonButton_Click_2"/>
                 </RibbonGroup>

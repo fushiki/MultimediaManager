@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultimediaManager.Core.FileSystemTreeViews;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,10 +11,19 @@ namespace MultimediaManager.Core.FileSystem
     {
         #region Fields
         protected string _path;
+        private FileSystemTreeViewModel _tree;
+        private long _key;
         #endregion
 
         #region Properties
         public string Path { get { return _path; } }
+        public long Key { get { return _key; } set { _key = value; } }
+
+        public virtual FileSystemTreeViewModel Tree 
+        { 
+            get { return _tree; } 
+            set { _tree = value; } 
+        }
 
         #region Abstract Properties
         public abstract bool Exists { get; }

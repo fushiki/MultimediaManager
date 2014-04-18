@@ -9,8 +9,12 @@ namespace MultimediaManager.Core.FileSystem
 {
     public class UnknownFile:File
     {
+        public override void Dispose()
+        {
+            
+        }
         private string staticpath;
-        public UnknownFile(string path):base(path)
+        public UnknownFile(string path) : base(path)
         {
             staticpath = path;
         }
@@ -26,6 +30,11 @@ namespace MultimediaManager.Core.FileSystem
                     stream.Write(buffer, 0, readed);
                 }
             }
+        }
+
+        public override Modules.Module ParentModule
+        {
+            get { return CoreSettings.Instance.Modules[CoreModule.StaticName]; }
         }
     }
 }

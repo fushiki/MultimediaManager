@@ -40,7 +40,7 @@ namespace MultimediaManager.ViewModels
 
 
         public event EventHandler RequestClose;
-        protected void OnRequestClose()
+        protected  virtual void OnRequestClose()
         {
             EventHandler handler = RequestClose;
             if (handler != null)

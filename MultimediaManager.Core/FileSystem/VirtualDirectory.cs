@@ -26,7 +26,7 @@ namespace MultimediaManager.Core.FileSystem
         {
             get { return _name; }
         }
-        public VirtualDirectory(string path, string name) : base(path) { _name = name; }
+        public VirtualDirectory(string path, string name) : base(path){ _name = name; }
 
     }
 }

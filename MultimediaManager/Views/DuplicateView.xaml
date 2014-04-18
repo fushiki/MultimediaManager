@@ -6,7 +6,18 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Height="155" Margin="55,70,0,0" VerticalAlignment="Top" Width="110"/>
-
+        <Button Content="Play" HorizontalAlignment="Left" Margin="40,35,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Stop" HorizontalAlignment="Left" Margin="40,70,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Slider HorizontalAlignment="Left"
+                Margin="40,125,0,0"
+                VerticalAlignment="Top"
+                Width="150"
+                Value="0"
+                Maximum="100"
+                Minimum="0"
+                SmallChange="1"
+                LargeChange="10"
+                TickPlacement="BottomRight" TickFrequency="10" 
+                ValueChanged="Slider_ValueChanged"/>
     </Grid>
 </UserControl>

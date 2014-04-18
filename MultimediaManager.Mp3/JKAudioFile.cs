@@ -39,5 +39,21 @@ namespace MultimediaManager.Mp3
 
             }
         }
+
+        public override void Save()
+        {
+            
+        }
+
+        public override void Dispose()
+        {
+
+        }
+
+      
+        public override System.IO.Stream SongStream
+        {
+            get { throw new NotImplementedException(); }
+        }
     }
 }

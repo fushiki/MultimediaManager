@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MultimediaManager.Core.FileSystem
+namespace MultimediaManager.Mp3
 {
-    public class DumpAudioFile:AudioFile
+    public class DumpAudioFile : AudioFile
     {
 
         public DumpAudioFile() : base("\\dumpaudiofile.mp3") { }
@@ -14,18 +14,30 @@ namespace MultimediaManager.Core.FileSystem
         public override string Title
         {
             get { return String.Empty; }
-            set {}
+            set { }
         }
 
         public override string Artist
         {
             get { return String.Empty; }
-            set {}
+            set { }
         }
 
         public override void WriteData(System.IO.FileStream stream)
         {
             throw new NotImplementedException("DumpAudioFile WriteData");
+        }
+
+        public override void Save()
+        {
+            
+        }
+
+ 
+
+        public override System.IO.Stream SongStream
+        {
+            get { throw new NotImplementedException(); }
         }
     }
 }

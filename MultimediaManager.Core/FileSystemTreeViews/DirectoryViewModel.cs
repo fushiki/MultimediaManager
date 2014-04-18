@@ -15,6 +15,7 @@ namespace MultimediaManager.Core.FileSystemTreeViews
         bool _isExpanded;
         bool _isLazy;
         bool _isLoaded;
+        bool _accessDenied;
         private static FileSystemEntityViewModel DummyChild = new DirectoryViewModel(null, null, true);
 
         public bool HasChildrenLoaded
@@ -44,7 +45,7 @@ namespace MultimediaManager.Core.FileSystemTreeViews
             _children = new ObservableCollection<FileSystemEntityViewModel>();
             _isLazy = isLazy;
             _isLoaded = false;
-
+            _accessDenied = false;
             if (isLazy)
             {
                 _children.Add(DummyChild);
@@ -85,6 +86,17 @@ namespace MultimediaManager.Core.FileSystemTreeViews
 
         public void Load()
         {
+            if (_accessDenied)
+                return;
+            try
+            {
+                var childs = _directory.GetChilds();
+            }catch(UnauthorizedAccessException ex)
+            {
+                _accessDenied = true;
+                Logger.Warning(ex);
+                //MessageDialog.Querry(MessageDialog.Message.AccessDenied, _directory.Path);
+            }
             _children.Clear();
             foreach (FileSystemEntity entity in _directory.GetChilds())
             {

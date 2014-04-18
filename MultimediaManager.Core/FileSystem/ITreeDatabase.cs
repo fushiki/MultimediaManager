@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultimediaManager.Core.Database;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,17 @@ namespace MultimediaManager.Core.FileSystem
 {
     public interface ITreeDatabase
     {
-        IList<Tuple<string, string>> GetChilds(DatabaseVirtualDirectory dir);
-        long InsertChild(DatabaseVirtualDirectory dir, string path, int index);
-        void RemoveChild(DatabaseVirtualDirectory dir, string path);
-        void RemoveChildDir(DatabaseVirtualDirectory dir, long key);
+
+        IList<TreeViewDatabasEntity> GetChilds(long key);
+        long InsertChild(TreeViewDatabasEntity child);
+        void RemoveChild(TreeViewDatabasEntity child);
+
+        long Insert(string treeName);
+
+        long Insert(long nodeId, string treeName);
+
+        long Insert(long nodeId, long treeId);
 
 
-        long InsertChild(DatabaseVirtualDirectory databaseVirtualDirectory, string p);
     }
 }

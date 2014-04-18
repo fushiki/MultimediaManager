@@ -8,7 +8,12 @@ namespace MultimediaManager.Core
 {
     public static class Logger
     {
-        public static void Error(Exception ex) { Logger.Error(ex.Message); }
+        public static void Error(Exception ex) { }
         public static void Error(String str) { }
+
+        public static void Warning(Exception ex)
+        {
+           
+        }
     }
 }

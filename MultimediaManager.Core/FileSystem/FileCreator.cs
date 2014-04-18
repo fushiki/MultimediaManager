@@ -22,7 +22,7 @@ namespace MultimediaManager.Core.FileSystem
 
         public File CreateFileReference(String path)
         {
-            foreach(Module m in Settings.Instance.Modules)
+            foreach(Module m in CoreSettings.Instance.Modules.Values)
             {
                 if(m.IsExtensionRecognizable(path))
                 {

@@ -8,44 +8,50 @@ namespace MultimediaManager.Core.FileSystem
 {
     public class DatabaseVirtualDirectory : VirtualDirectory
     {
-        ITreeDatabase _database;
-        long _key;
-
+        
+        protected ITreeDatabase Database 
+        { 
+            get
+            {
+                return CoreSettings.Instance.Database;
+            }
+        }
         public DatabaseVirtualDirectory(string path, string name, long key)
             : base(path, name)
         {
-            _key = key;
+            
         }
+
 
         public override IList<FileSystemEntity> GetChilds()
         {
-            throw new NotImplementedException();
+            IList<FileSystemEntity> list = new List<FileSystemEntity>();
+            var childs = Database.GetChilds(Key);
+            foreach(var ch in childs)
+            {
+                if(ch.IsFile)
+                {
+                    list.Add(File.CreateFileReference(ch.Path));
+                }else
+                {
+                    list.Add(new DatabaseVirtualDirectory(ch.Path, ch.Name, ch.ID));
+                }
+            }
+            return list;
+        }
+        public override FileSystemEntity InsertChild(FileSystemEntity entity,int index)
+        {
+            
+            return null;
         }
         public override FileSystemEntity InsertChild(FileSystemEntity entity)
         {
-            long id = _database.InsertChild(this, entity.Path);
-            if (entity is File) return entity;
-            else
-            {
-                return new DatabaseVirtualDirectory(entity.Path, entity.Name, id);
-            }
-        }
-        public override FileSystemEntity InsertChild(FileSystemEntity entity, int index)
-        {
-            long id = _database.InsertChild(this, entity.Path, index);
-            if (entity is File) return entity;
-            else
-            {
-                return new DatabaseVirtualDirectory(entity.Path, entity.Name, id);
-            }
+            return null;
         }
 
         public override void RemoveChild(FileSystemEntity entity)
         {
-            if (entity is DatabaseVirtualDirectory)
-                _database.RemoveChildDir(this, (entity as DatabaseVirtualDirectory)._key);
-            else
-                _database.RemoveChild(this, entity.Path);
+            
         }
     }
 }

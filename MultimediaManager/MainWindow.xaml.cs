@@ -52,5 +52,14 @@ namespace MultimediaManager
             ((DataContext) as MainWindowViewModel).CurrentView = new TestDragAndDropViewModel();
         }
 
+        private void RibbonButton_Click_3(object sender, RoutedEventArgs e)
+        {
+            string file = "C:\\Temp\\test - Copy.mp3";
+            MultimediaManager.Mp3.TaglibAudioFile afile = new MultimediaManager.Mp3.TaglibAudioFile(file);
+            MultimediaManager.Mp3.Player player = new MultimediaManager.Mp3.NAudioPlayer();
+            player.LoadSong(afile.SongStream);
+            player.Play();
+        }
+
     }
 }
